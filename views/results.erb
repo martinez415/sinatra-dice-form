@@ -1,0 +1,15 @@
+<h1><%= @num_dice %>d<%= @num_sides %></h1>
+
+<div>
+  <a href="/process_roll">Roll again</a> 
+  |
+  <a href="/">Go back home</a>
+</div>
+
+<div>
+  <ol>
+  <% @rolls.each do |x| %>
+    <li><i>Results</i>: <%= x %></li>
+  <% end %>
+  </ol>
+</div>
